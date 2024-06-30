@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    color: #bdc1c6;
+    /*padding: 14px;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav,
+section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+header section img{
+    max-width: 40px;
+    border-radius: 50%;
+    border: 2px solid cyan;
+
+}
+
+.whiteLink {
+    color: white;
+}
+
+.greyLink {
+    color: lightgrey;
+}
+
+a {
+    text-decoration: unset;
+    font-size: 0.8em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding:0 14px;
+}
+
+#headerLogo {
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.searchBar {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid grey;
+    padding: 14px;
+    border-radius: 24px;
+}
+
+.searchBar:hover {
+    border-color: transparent;
+    background: #334155;
+}
+
+input {
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: white;
+    flex: 1;
+
+}
+
+.searchButtons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.searchButtons button {
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: #334155;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+
+}
+.iconButtonContainer{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.iconButtons{
+    background: transparent;
+    border:none;
+    color:white;
+    font-size: 1.2em;
+    cursor: pointer;
+
+}
+
+
+
+.searchButtons {
+    border: 1px solid darkgrey;
+}
+
+.language {
+    font-size: 0.9em;
+}
+
+.language span {
+    color: cyan;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer>section {
+    padding: 14px;
+}
+
+footer>section:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid darkgray
+}
+
+.footerLinks{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footerLinks a{
+    cursor: pointer;
+}
+
+@media (min-width:540px) {
+    footer>section:last-child{
+        flex-direction: row;
+    }
+}
